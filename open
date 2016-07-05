@@ -1,0 +1,1 @@
+gtkdialog --glade-xml /.project/glade/main.glade --program=main_win
