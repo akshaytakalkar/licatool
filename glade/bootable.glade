@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glade-interface>
+  <!-- interface-requires gtk+ 2.24 -->
+  <!-- interface-naming-policy project-wide -->
+  <widget class="GtkWindow" id="window1">
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">Create Bootable Media Portal</property>
+    <property name="resizable">False</property>
+    <property name="modal">True</property>
+    <property name="window_position">center</property>
+    <child>
+      <widget class="GtkFixed" id="fixed1">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <widget class="GtkLabel" id="label1">
+            <property name="width_request">264</property>
+            <property name="height_request">57</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Create Bootable Flash Drive Portal</property>
+          </widget>
+          <packing>
+            <property name="x">147</property>
+            <property name="y">1</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkHSeparator" id="hseparator1">
+            <property name="width_request">570</property>
+            <property name="height_request">25</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+          </widget>
+          <packing>
+            <property name="x">4</property>
+            <property name="y">41</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkLabel" id="label2">
+            <property name="width_request">174</property>
+            <property name="height_request">73</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Provide ISO File PATH	:</property>
+          </widget>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">74</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkLabel" id="label3">
+            <property name="width_request">179</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="xalign">0.4699999988079071</property>
+            <property name="yalign">0.44999998807907104</property>
+            <property name="label" translatable="yes">Provide File System Name:		:</property>
+          </widget>
+          <packing>
+            <property name="x">37</property>
+            <property name="y">137</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkCheckButton" id="checkbutton1">
+            <property name="label" translatable="yes">Do you want to FORMAT Media/FlashDrive?</property>
+            <property name="width_request">340</property>
+            <property name="height_request">56</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="relief">none</property>
+            <property name="active">True</property>
+            <property name="draw_indicator">True</property>
+          </widget>
+          <packing>
+            <property name="x">113</property>
+            <property name="y">238</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkHSeparator" id="hseparator2">
+            <property name="width_request">570</property>
+            <property name="height_request">28</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+          </widget>
+          <packing>
+            <property name="y">286</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="button1">
+            <property name="label" translatable="yes">Create</property>
+            <property name="width_request">168</property>
+            <property name="height_request">41</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="/.project/scripts/test.sh checkbutton1 entry1 entry2" swapped="no"/>
+          </widget>
+          <packing>
+            <property name="x">104</property>
+            <property name="y">329</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="button2">
+            <property name="label" translatable="yes">Help</property>
+            <property name="width_request">168</property>
+            <property name="height_request">41</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+          </widget>
+          <packing>
+            <property name="x">299</property>
+            <property name="y">329</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkHSeparator" id="hseparator3">
+            <property name="width_request">573</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+          </widget>
+          <packing>
+            <property name="y">375</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkEntry" id="entry2">
+            <property name="width_request">250</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="primary_icon_activatable">False</property>
+            <property name="secondary_icon_activatable">False</property>
+            <property name="primary_icon_sensitive">True</property>
+            <property name="secondary_icon_sensitive">True</property>
+          </widget>
+          <packing>
+            <property name="x">233</property>
+            <property name="y">159</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="button3">
+            <property name="label" translatable="yes">Show Devices !!</property>
+            <property name="width_request">152</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="/.project/scripts/devices.sh" swapped="no"/>
+          </widget>
+          <packing>
+            <property name="x">231</property>
+            <property name="y">205</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="button4">
+            <property name="label" translatable="yes">Select ISO</property>
+            <property name="width_request">152</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="/.project/scripts/selectiso.sh" swapped="no"/>
+          </widget>
+          <packing>
+            <property name="x">229</property>
+            <property name="y">98</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkVSeparator" id="vseparator1">
+            <property name="width_request">26</property>
+            <property name="height_request">358</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+          </widget>
+          <packing>
+            <property name="x">507</property>
+            <property name="y">55</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</glade-interface>
